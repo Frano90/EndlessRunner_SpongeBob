@@ -24,8 +24,10 @@ public class TapDetector : MonoBehaviour
             {
                 fingerUpPosition = touch.position;
 
-                if (Vector2.Distance(fingerDownPosition, fingerUpPosition) == 0)
+        
+                if (Vector2.Distance(fingerDownPosition, fingerUpPosition) < 40)
                 {
+                    
                     OnTap();
                 }
             }

@@ -18,7 +18,13 @@ ModelImporter:
   - first:
       74: -3100369314251171874
     second: Idle
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Jellyfish__Jellyfish_png
+    second: {fileID: 2693091780730865028, guid: 352efccff2287674d8524457f3977aae,
+      type: 3}
   materials:
     importMaterials: 1
     materialName: 0
