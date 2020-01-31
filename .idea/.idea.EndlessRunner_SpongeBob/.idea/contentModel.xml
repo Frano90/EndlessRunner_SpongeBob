@@ -99,6 +99,7 @@
             <e p="GameEvent.cs" t="Include" />
             <e p="GameEventListener.cs" t="Include" />
             <e p="LoadGameScene.cs" t="Include" />
+            <e p="PersistThroughSceneChange.cs" t="Include" />
           </e>
         </e>
       </e>

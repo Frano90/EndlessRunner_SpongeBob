@@ -197,6 +197,111 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 404224444}
   m_CullTransparentMesh: 0
+--- !u!1001 &640809927
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2604703394323005007, guid: 8f4e54a865686434491f15b9fbdaccdb,
+        type: 3}
+      propertyPath: m_Name
+      value: TrackModule_Pool
+      objectReference: {fileID: 0}
+    - target: {fileID: 2604703394323005041, guid: 8f4e54a865686434491f15b9fbdaccdb,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2604703394323005041, guid: 8f4e54a865686434491f15b9fbdaccdb,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2604703394323005041, guid: 8f4e54a865686434491f15b9fbdaccdb,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2604703394323005041, guid: 8f4e54a865686434491f15b9fbdaccdb,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2604703394323005041, guid: 8f4e54a865686434491f15b9fbdaccdb,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2604703394323005041, guid: 8f4e54a865686434491f15b9fbdaccdb,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2604703394323005041, guid: 8f4e54a865686434491f15b9fbdaccdb,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2604703394323005041, guid: 8f4e54a865686434491f15b9fbdaccdb,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2604703394323005041, guid: 8f4e54a865686434491f15b9fbdaccdb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2604703394323005041, guid: 8f4e54a865686434491f15b9fbdaccdb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2604703394323005041, guid: 8f4e54a865686434491f15b9fbdaccdb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2604703394323005006, guid: 8f4e54a865686434491f15b9fbdaccdb,
+        type: 3}
+      propertyPath: OnFinishPreWarmPool
+      value: 
+      objectReference: {fileID: 11400000, guid: 42ed838b9138247b5845eb11562c5bd3,
+        type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8f4e54a865686434491f15b9fbdaccdb, type: 3}
+--- !u!1 &757488048 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2604703394323005007, guid: 8f4e54a865686434491f15b9fbdaccdb,
+    type: 3}
+  m_PrefabInstance: {fileID: 640809927}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &757488049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757488048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 020fcac26d48e49cc960af191c7c38c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &757488050 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2604703394323005006, guid: 8f4e54a865686434491f15b9fbdaccdb,
+    type: 3}
+  m_PrefabInstance: {fileID: 640809927}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757488048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b5b069041ca541cd8a094d991784e80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1081753776
 GameObject:
   m_ObjectHideFlags: 0
@@ -278,7 +383,29 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1081753779}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 757488050}
+        m_MethodName: PreWarmPoolObjects
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2041493500}
+        m_MethodName: TurnOnLoadingSignal
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1081753779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -661,6 +788,7 @@ GameObject:
   - component: {fileID: 2041493498}
   - component: {fileID: 2041493497}
   - component: {fileID: 2041493500}
+  - component: {fileID: 2041493501}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -747,3 +875,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _startButon: {fileID: 1081753778}
   _text: {fileID: 1650588350}
+--- !u!114 &2041493501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041493496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76a7742c01fc345e48fe4e4cb2f48716, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 42ed838b9138247b5845eb11562c5bd3, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2041493500}
+        m_MethodName: LoadScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

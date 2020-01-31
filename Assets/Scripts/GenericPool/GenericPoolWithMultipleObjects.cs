@@ -22,6 +22,11 @@ public abstract class GenericPoolWithMultipleObjects<T> : MonoBehaviour where T 
     /// </summary>
     [SerializeField] private int amountOfPreCreatedObjects;
 
+    /// <summary>
+    /// evento que se dispara cuando se termina de crear el prewarm
+    /// </summary>
+    [SerializeField] private GameEvent OnFinishPreWarmPool;
+
     #region Init and set of pool
 
     private void Awake()
@@ -35,7 +40,7 @@ public abstract class GenericPoolWithMultipleObjects<T> : MonoBehaviour where T 
     private void Start()
     {
         InitData();
-        PreWarmPoolObjects();
+        //PreWarmPoolObjects();
     }
 
     /// <summary>
@@ -53,17 +58,26 @@ public abstract class GenericPoolWithMultipleObjects<T> : MonoBehaviour where T 
     /// <summary>
     /// Objetos creados antes de arrancar para ya tener 
     /// </summary>
-    private void PreWarmPoolObjects()
+    public void PreWarmPoolObjects()
+    {
+
+        StartCoroutine(PreWarm_CoRoutine());
+
+    }
+
+    private IEnumerator PreWarm_CoRoutine()
     {
         for (int i = 0; i < prefabs.Count; i++)
         {
             for (int j = 0; j < amountOfPreCreatedObjects; j++)
             {
                 AddObjectToQueue(i);
+                yield return 0;
             }
         }
+        
+        OnFinishPreWarmPool.Raise();
     }
-
 
     #endregion
 
@@ -105,7 +119,7 @@ public abstract class GenericPoolWithMultipleObjects<T> : MonoBehaviour where T 
     /// <param name="queueIndex"></param>
     private void AddObjectToQueue(int queueIndex)
     {
-        var newObject = GameObject.Instantiate(prefabs[queueIndex]);
+        var newObject = GameObject.Instantiate(prefabs[queueIndex], transform);
         newObject.gameObject.SetActive(false);
         tracksModules[queueIndex].Enqueue(newObject);
 

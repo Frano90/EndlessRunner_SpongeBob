@@ -10,18 +10,18 @@ public class LoadGameScene : MonoBehaviour
     [SerializeField] private Button _startButon;
     [SerializeField] private Text _text;
 
-    private void Awake()
-    {
-        _startButon.onClick.AddListener(LoadScene);
-    }
-
-    private void LoadScene()
+    public void LoadScene()
     {
         StartCoroutine(LoadYourAsyncScene("Race"));
+        
+    }
+
+    public void TurnOnLoadingSignal()
+    {
         _text.gameObject.SetActive(true);
     }
     
-    public IEnumerator LoadYourAsyncScene(string sceneName)
+    private IEnumerator LoadYourAsyncScene(string sceneName)
     {
         
         AsyncOperation asyncLoad = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(sceneName);
