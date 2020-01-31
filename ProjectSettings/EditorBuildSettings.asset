@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/CosasQueVenianConUnity/Scenes/SampleScene.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
   - enabled: 1
-    path: Assets/CosasQueVenianConUnity/Scenes/Race.unity
+    path: Assets/Scenes/Race.unity
     guid: 2ee3b1b75d5ec463dbfcfe986d41749a
   m_configObjects: {}
