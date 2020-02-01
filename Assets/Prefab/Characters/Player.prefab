@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3174062873414302947}
   - component: {fileID: 1944984097}
   - component: {fileID: 1944984094}
+  - component: {fileID: 1785284189}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 7603300316028061471}
+  - {fileID: 7414067975227011193}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -64,98 +65,106 @@ MonoBehaviour:
   lateralSpeed: 13
   jumpSpeed: 5
   _jumpDistance: 2
---- !u!1001 &3242290005840653317
+--- !u!65 &1785284189
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4961271687005995827}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0.85, z: 0}
+--- !u!1001 &2566694739547577187
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 3174062873414302947}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: a96c56d9b0cc04e9da0ca2f90b2143b1,
-        type: 3}
-      propertyPath: m_Name
-      value: Bob esponja animado final con vehiculo
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: a96c56d9b0cc04e9da0ca2f90b2143b1,
+    - target: {fileID: -4216859302048453862, guid: 175422fe3a6c30f4f88c2e29b7c7e17d,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: a96c56d9b0cc04e9da0ca2f90b2143b1,
+    - target: {fileID: -4216859302048453862, guid: 175422fe3a6c30f4f88c2e29b7c7e17d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 1.2
       objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: a96c56d9b0cc04e9da0ca2f90b2143b1,
+    - target: {fileID: -4216859302048453862, guid: 175422fe3a6c30f4f88c2e29b7c7e17d,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: a96c56d9b0cc04e9da0ca2f90b2143b1,
+    - target: {fileID: -4216859302048453862, guid: 175422fe3a6c30f4f88c2e29b7c7e17d,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: a96c56d9b0cc04e9da0ca2f90b2143b1,
+    - target: {fileID: -4216859302048453862, guid: 175422fe3a6c30f4f88c2e29b7c7e17d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: a96c56d9b0cc04e9da0ca2f90b2143b1,
+    - target: {fileID: -4216859302048453862, guid: 175422fe3a6c30f4f88c2e29b7c7e17d,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: a96c56d9b0cc04e9da0ca2f90b2143b1,
+    - target: {fileID: -4216859302048453862, guid: 175422fe3a6c30f4f88c2e29b7c7e17d,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: a96c56d9b0cc04e9da0ca2f90b2143b1,
+    - target: {fileID: -4216859302048453862, guid: 175422fe3a6c30f4f88c2e29b7c7e17d,
         type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: a96c56d9b0cc04e9da0ca2f90b2143b1,
+    - target: {fileID: -4216859302048453862, guid: 175422fe3a6c30f4f88c2e29b7c7e17d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: a96c56d9b0cc04e9da0ca2f90b2143b1,
+    - target: {fileID: -4216859302048453862, guid: 175422fe3a6c30f4f88c2e29b7c7e17d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: a96c56d9b0cc04e9da0ca2f90b2143b1,
+    - target: {fileID: -4216859302048453862, guid: 175422fe3a6c30f4f88c2e29b7c7e17d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: a96c56d9b0cc04e9da0ca2f90b2143b1,
+    - target: {fileID: -4216859302048453862, guid: 175422fe3a6c30f4f88c2e29b7c7e17d,
         type: 3}
       propertyPath: m_LocalScale.x
       value: 15
       objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: a96c56d9b0cc04e9da0ca2f90b2143b1,
+    - target: {fileID: -4216859302048453862, guid: 175422fe3a6c30f4f88c2e29b7c7e17d,
         type: 3}
       propertyPath: m_LocalScale.y
       value: 15
       objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: a96c56d9b0cc04e9da0ca2f90b2143b1,
+    - target: {fileID: -4216859302048453862, guid: 175422fe3a6c30f4f88c2e29b7c7e17d,
         type: 3}
       propertyPath: m_LocalScale.z
       value: 15
       objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: a96c56d9b0cc04e9da0ca2f90b2143b1,
+    - target: {fileID: -927199367670048503, guid: 175422fe3a6c30f4f88c2e29b7c7e17d,
         type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: bf2c44ffaf2e2419e86204dcf25aebeb, type: 2}
+      propertyPath: m_Name
+      value: Bob esponja animado final con vehiculo (1)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a96c56d9b0cc04e9da0ca2f90b2143b1, type: 3}
---- !u!4 &7603300316028061471 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: 175422fe3a6c30f4f88c2e29b7c7e17d, type: 3}
+--- !u!4 &7414067975227011193 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: a96c56d9b0cc04e9da0ca2f90b2143b1,
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 175422fe3a6c30f4f88c2e29b7c7e17d,
     type: 3}
-  m_PrefabInstance: {fileID: 3242290005840653317}
+  m_PrefabInstance: {fileID: 2566694739547577187}
   m_PrefabAsset: {fileID: 0}

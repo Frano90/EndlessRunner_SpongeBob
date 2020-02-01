@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8680125021057538858}
   - component: {fileID: 2823820132304525640}
   - component: {fileID: 2823820132304525646}
+  - component: {fileID: -587007834966373461}
   m_Layer: 10
   m_Name: TrackM_2
   m_TagString: Untagged
@@ -64,6 +65,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _trackModuleConfig: {fileID: 11400000, guid: 81575093096c94cbab374a3032a36826, type: 2}
+--- !u!114 &-587007834966373461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1049920373841032977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88e7345c17542f042b695b4549cf93e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1741443438151991700
 GameObject:
   m_ObjectHideFlags: 0

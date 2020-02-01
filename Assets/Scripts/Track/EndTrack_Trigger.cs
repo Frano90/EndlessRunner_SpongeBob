@@ -10,9 +10,10 @@ public class EndTrack_Trigger : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         TrackModule lastModule = other.transform.parent.GetComponent<TrackModule>();
+        Debug.Log("Se fue el ultimo trackmodule");
         if (lastModule != null && lastModule.gameObject.layer == 10)
         {
-            Debug.Log("Se fue el ultimo trackmodule");
+           
             OnLastTrackModule(lastModule);
         }
     }

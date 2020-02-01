@@ -8,12 +8,13 @@ using UnityEngine.UI;
 public class LoadGameScene : MonoBehaviour
 {
     [SerializeField] private Button _startButon;
-    [SerializeField] private Text _text;
+    [SerializeField] private Text _text;  
 
     public void LoadScene()
     {
+        TurnOnLoadingSignal();
         StartCoroutine(LoadYourAsyncScene("Race"));
-        
+        //SceneManager.LoadScene("Test"); 
     }
 
     public void TurnOnLoadingSignal()
@@ -23,6 +24,8 @@ public class LoadGameScene : MonoBehaviour
     
     private IEnumerator LoadYourAsyncScene(string sceneName)
     {
+
+        yield return new WaitForSeconds(3);
         
         AsyncOperation asyncLoad = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(sceneName);
 
