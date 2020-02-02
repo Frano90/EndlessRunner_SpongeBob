@@ -1,17 +1,11 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TrackElement : MonoBehaviour
+public abstract class TrackElement : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
+    protected virtual void OnTriggerEnter(Collider other)
     {
         
     }

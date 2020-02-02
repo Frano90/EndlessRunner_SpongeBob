@@ -1,7 +1,0 @@
-0 - 170: Arranca a correr, corre, y frena.
-
-0 - 25: Comienza a acelerar.
-25 - 124: loop de correr.
-125 - 170: Frena.
-190 - 223: Animacion de salto.
-240 a 290: Animacion de espera (Onda despues de estar quieto un ratito hace esa animacion)

@@ -45,6 +45,8 @@ public class Speed_handler : MonoBehaviour
 
     private void AnimadoTick()
     {
+        ResetTimerForOverExcited();
+        
         _trackModuleConfig.speed += _entityConfig.aceleration;
 
         if (_trackModuleConfig.speed >= _entityConfig.topSpeed)
@@ -53,6 +55,8 @@ public class Speed_handler : MonoBehaviour
     
     private void DesanimadoTick()
     {
+        ResetTimerForOverExcited();
+            
         _trackModuleConfig.speed -= _entityConfig.decelerate;
 
         if (_trackModuleConfig.speed <= 0)
@@ -71,7 +75,7 @@ public class Speed_handler : MonoBehaviour
         
         if (_timeCount >= _entityConfig.overExitedTime)
         {
-            _timeCount = 0;
+            ResetTimerForOverExcited();
             OverExcitedExplode();
         }
     }
@@ -80,6 +84,11 @@ public class Speed_handler : MonoBehaviour
     {
         _cheerMeterHandler.MinusCheer(_cheerMeterHandler.CurrentCheer);
         _trackModuleConfig.speed = 5;
+    }
+
+    private void ResetTimerForOverExcited()
+    {
+        _timeCount = 0;
     }
 
     

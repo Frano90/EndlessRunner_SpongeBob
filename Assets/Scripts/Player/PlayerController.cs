@@ -67,7 +67,10 @@ public class PlayerController : MonoBehaviour
 
       SwipeDetector.OnSwipe += TranslateSwipeInput;
       TapDetector.OnTap += Cheer;
+      
+      Obstacle.OnCollideWithObstacle += ObstacleOnCollideWithObstacle;
    }
+
    
 
    #endregion
@@ -145,11 +148,11 @@ public class PlayerController : MonoBehaviour
 
    #endregion
 
-   #region Events Commands
+   #region Obstacles
 
-   private void OverExcitedExplotion()
+   private void ObstacleOnCollideWithObstacle(Obstacle obstacle)
    {
-      
+      _cheerMeterHandler.MinusCheer(obstacle.cheerDrop);
    }
 
    #endregion

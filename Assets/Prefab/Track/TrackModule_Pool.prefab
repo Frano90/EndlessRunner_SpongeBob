@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2604703394323005041}
   - component: {fileID: 2604703394323005006}
+  - component: {fileID: 440411131}
   m_Layer: 0
   m_Name: TrackModule_Pool
   m_TagString: Untagged
@@ -55,4 +56,18 @@ MonoBehaviour:
   - {fileID: 4375816195142671115, guid: afb1ce0377699484684689f126873816, type: 3}
   - {fileID: 4375816195142671115, guid: 0ff3292335a48439d9fdcb429eded84c, type: 3}
   - {fileID: 4375816195142671115, guid: dc6933d5a3e3e4108b1da4f0a80d628c, type: 3}
-  amountOfPreCreatedObjects: 2
+  amountOfPreCreatedObjects: 1
+  OnFinishPreWarmPool: {fileID: 11400000, guid: 42ed838b9138247b5845eb11562c5bd3,
+    type: 2}
+--- !u!114 &440411131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2604703394323005007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 020fcac26d48e49cc960af191c7c38c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

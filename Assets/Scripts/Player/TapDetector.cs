@@ -23,11 +23,9 @@ public class TapDetector : MonoBehaviour
             if (touch.phase == TouchPhase.Ended)
             {
                 fingerUpPosition = touch.position;
-
-        
+                
                 if (Vector2.Distance(fingerDownPosition, fingerUpPosition) < 40)
                 {
-                    
                     OnTap();
                 }
             }

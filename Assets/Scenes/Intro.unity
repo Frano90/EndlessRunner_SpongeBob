@@ -198,34 +198,16 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 404224444}
   m_CullTransparentMesh: 0
---- !u!1 &440411128 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2604703394323005007, guid: 8f4e54a865686434491f15b9fbdaccdb,
-    type: 3}
-  m_PrefabInstance: {fileID: 1655218651}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &440411129 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2604703394323005006, guid: 8f4e54a865686434491f15b9fbdaccdb,
     type: 3}
   m_PrefabInstance: {fileID: 1655218651}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 440411128}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b5b069041ca541cd8a094d991784e80, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &440411131
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 440411128}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 020fcac26d48e49cc960af191c7c38c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1081753776
@@ -507,17 +489,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2604703394323005006, guid: 8f4e54a865686434491f15b9fbdaccdb,
-        type: 3}
-      propertyPath: OnFinishPreWarmPool
-      value: 
-      objectReference: {fileID: 11400000, guid: 42ed838b9138247b5845eb11562c5bd3,
-        type: 2}
-    - target: {fileID: 2604703394323005006, guid: 8f4e54a865686434491f15b9fbdaccdb,
-        type: 3}
-      propertyPath: amountOfPreCreatedObjects
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2604703394323005007, guid: 8f4e54a865686434491f15b9fbdaccdb,
         type: 3}
       propertyPath: m_Name
